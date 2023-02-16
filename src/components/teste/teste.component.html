@@ -1,0 +1,19 @@
+<div class="geral">
+  <p id="gremio">Olá, meu nome é {{ name }} !!!</p>
+  <button (click)="updateCount()">+1</button>
+  <button (click)="cleanCount()">Zerar</button>
+
+  <p id="quantity">Fui chamado {{ count }} vezes</p>
+  <img [src]="imgSourcee" [alt]="name" height="400px" />
+
+  <div class="fieldset">
+    <br />
+    <button (click)="disabled = !disabled">Turn on / off</button>
+    <input
+      id="gremioo"
+      type="text"
+      [disabled]="disabled"
+      placeholder="É o Grêmiooooo! "
+    />
+  </div>
+</div>
